@@ -6,6 +6,10 @@ class Getter
     @agent = agent
   end
 
+  def page(url)
+    agent.get(url)
+  end
+
   def to_s
     "Agent: #{agent.class}"
   end
