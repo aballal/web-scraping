@@ -2,7 +2,9 @@ require 'getter'
 
 describe Getter do
   subject(:getter) { described_class.new }
-  let!(:url) { "https://jobonline.thecareersgroup.co.uk/careersgroup/student/Vacancies.aspx?st=java" }
+  let!(:url) do
+    'https://jobonline.thecareersgroup.co.uk/careersgroup/student/Vacancies.aspx?st=java'
+  end
 
   describe 'initialisation' do
     it 'should be instantiated with an agent' do
