@@ -19,7 +19,11 @@ describe Scraper do
      'Graduate Software Developer',
      'Junior Front End Developer (Intern)',
      'JUNIOR DEVELOPER | LAMP Stack (Laravel/MySQL/.PHP/Javascript/HTML) | LONDON',
-     'Ad Operations Executive - Graduate/Entry Level']
+     'Ad Operations Executive - Graduate/Entry Level',
+     'Software Engineering Graduates',
+     'Web Application Developer (Java or Angular 2)',
+     'Junior Java Developer - Talent Pool-170001JQ',
+     'IT developer (Intern / Full time)']
   end
 
   describe 'initialisation' do

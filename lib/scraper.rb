@@ -20,6 +20,16 @@ class Scraper
   attr_reader :page
 
   def job_links
-    page.links_with(class: 'ovalbuttondetails')
+    links = []
+    loop do
+      links << page.links_with(class: 'ovalbuttondetails')
+      break unless next_link
+      @page = next_link.click
+    end
+    links.flatten
+  end
+
+  def next_link
+    page.links_with(text: 'Next >').first
   end
 end
