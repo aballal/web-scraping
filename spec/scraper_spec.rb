@@ -10,20 +10,20 @@ describe Scraper do
   let!(:scraper) { described_class.new(page) }
 
   let!(:expected_job_details) do
-    ['Application Development',
-     'Operations Analyst',
-     'Junior Java Developer & Support Consultant',
-     'Junior Front End Developer',
-     'Junior Performance Tester',
-     'Junior Java Developer',
-     'Graduate Software Developer',
-     'Junior Front End Developer (Intern)',
-     'JUNIOR DEVELOPER | LAMP Stack (Laravel/MySQL/.PHP/Javascript/HTML) | LONDON',
-     'Ad Operations Executive - Graduate/Entry Level',
-     'Software Engineering Graduates',
-     'Web Application Developer (Java or Angular 2)',
-     'Junior Java Developer - Talent Pool-170001JQ',
-     'IT developer (Intern / Full time)']
+    [['Application Development', 'Baillie Gifford', 'Competitive'],
+     ['Operations Analyst', 'Salmon Ltd', 'Market Rates'],
+     ['Junior Java Developer & Support Consultant', 'Salmon Ltd', 'Market Rates'],
+     ['Junior Front End Developer', 'Salmon Ltd', 'Market Rates'],
+     ['Junior Performance Tester', 'Salmon Ltd', 'Market Rates'],
+     ['Junior Java Developer', 'Salmon Ltd', 'Market Rates'],
+     ['Graduate Software Developer', 'eBay UK', 'Competitive'],
+     ['Junior Front End Developer (Intern)', 'Graduate Internships', '£400 per week'],
+     ['JUNIOR DEVELOPER | LAMP Stack (Laravel/MySQL/.PHP/Javascript/HTML) | LONDON', 'The Happiness Index Ltd', 'Negotiable dep. on experience'],
+     ['Ad Operations Executive - Graduate/Entry Level', 'Haymarket', 'Dependent on Experience'],
+     ['Software Engineering Graduates', 'MI6', '£33,005 - £39,176 (depending on experience)'],
+     ['Web Application Developer (Java or Angular 2)', 'Camlin Group', '£30-£45k'],
+     ['Junior Java Developer - Talent Pool-170001JQ', 'ITV', 'TBC'],
+     ['IT developer (Intern / Full time)', 'Illiquidx Securities Limited', 'negotiable']]
   end
 
   describe 'initialisation' do
@@ -33,7 +33,7 @@ describe Scraper do
   end
 
   describe '#job_details' do
-    it 'should get all titles' do
+    it 'should get title, recruiter, company for all jobs' do
       expect(scraper.job_details).to eq expected_job_details
     end
   end
