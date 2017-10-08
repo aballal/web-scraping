@@ -1,7 +1,14 @@
+require 'aruba'
+require 'aruba/api'
+require 'pathname'
 require 'simplecov'
 require 'simplecov-console'
 
 require_relative 'helpers'
+
+Aruba.configure do |config|
+  config.working_directory = 'output'
+end
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
@@ -12,6 +19,7 @@ SimpleCov.start
 
 RSpec.configure do |config|
   config.include Helpers
+  config.include Aruba::Api
 
   config.after(:suite) do
     puts
