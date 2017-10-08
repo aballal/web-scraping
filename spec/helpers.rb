@@ -6,19 +6,77 @@ module Helpers
   end
 
   def job_details
-    [['Application Development', 'Baillie Gifford', 'Competitive'],
-     ['Operations Analyst', 'Salmon Ltd', 'Market Rates'],
-     ['Junior Java Developer & Support Consultant', 'Salmon Ltd', 'Market Rates'],
-     ['Junior Front End Developer', 'Salmon Ltd', 'Market Rates'],
-     ['Junior Performance Tester', 'Salmon Ltd', 'Market Rates'],
-     ['Junior Java Developer', 'Salmon Ltd', 'Market Rates'],
-     ['Graduate Software Developer', 'eBay UK', 'Competitive'],
-     ['Junior Front End Developer (Intern)', 'Graduate Internships', '£400 per week'],
-     ['JUNIOR DEVELOPER | LAMP Stack (Laravel/MySQL/.PHP/Javascript/HTML) | LONDON', 'The Happiness Index Ltd', 'Negotiable dep. on experience'],
-     ['Ad Operations Executive - Graduate/Entry Level', 'Haymarket', 'Dependent on Experience'],
-     ['Software Engineering Graduates', 'MI6', '£33,005 - £39,176 (depending on experience)'],
-     ['Web Application Developer (Java or Angular 2)', 'Camlin Group', '£30-£45k'],
-     ['Junior Java Developer - Talent Pool-170001JQ', 'ITV', 'TBC'],
-     ['IT developer (Intern / Full time)', 'Illiquidx Securities Limited', 'negotiable']]
+    [
+      {
+        title: 'Application Development',
+        recruiter: 'Baillie Gifford',
+        salary: 'Competitive'
+      },
+      {
+        title: 'Operations Analyst',
+        recruiter: 'Salmon Ltd',
+        salary: 'Market Rates'
+      },
+      {
+        title: 'Junior Java Developer & Support Consultant',
+        recruiter: 'Salmon Ltd',
+        salary: 'Market Rates'
+      },
+      {
+        title: 'Junior Front End Developer',
+        recruiter: 'Salmon Ltd',
+        salary: 'Market Rates'
+      },
+      {
+        title: 'Junior Performance Tester',
+        recruiter: 'Salmon Ltd',
+        salary: 'Market Rates'
+      },
+      {
+        title: 'Junior Java Developer',
+        recruiter: 'Salmon Ltd',
+        salary: 'Market Rates'
+      },
+      {
+        title: 'Graduate Software Developer',
+        recruiter: 'eBay UK',
+        salary: 'Competitive'
+      },
+      {
+        title: 'Junior Front End Developer (Intern)',
+        recruiter: 'Graduate Internships',
+        salary: '£400 per week'
+      },
+      {
+        title: 'JUNIOR DEVELOPER | LAMP Stack (Laravel/MySQL/.PHP/Javascript/HTML) | LONDON',
+        recruiter: 'The Happiness Index Ltd',
+        salary: 'Negotiable dep. on experience'
+      },
+      {
+        title: 'Ad Operations Executive - Graduate/Entry Level',
+        recruiter: 'Haymarket',
+        salary: 'Dependent on Experience'
+      },
+      {
+        title: 'Software Engineering Graduates',
+        recruiter: 'MI6',
+        salary: '£33,005 - £39,176 (depending on experience)'
+      },
+      {
+        title: 'Web Application Developer (Java or Angular 2)',
+        recruiter: 'Camlin Group',
+        salary: '£30-£45k'
+      },
+      {
+        title: 'Junior Java Developer - Talent Pool-170001JQ',
+        recruiter: 'ITV',
+        salary: 'TBC'
+      },
+      {
+        title: 'IT developer (Intern / Full time)',
+        recruiter: 'Illiquidx Securities Limited',
+        salary: 'negotiable'
+      }
+    ]
   end
 end

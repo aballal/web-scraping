@@ -47,8 +47,8 @@ class Scraper
   def selected_texts
     texts = all_texts
     keys = ['Recruiter:', 'Salary:']
-    key_indices = keys.map { |key| texts.find_index { |text| text == key } }
-    values = key_indices.collect { |i| texts[i + 1] }
-    [texts[0]] + values
+    keys.each_with_object(title: texts[0]) do |key, hash|
+      hash[key.downcase[0..-2].to_sym] = texts[texts.find_index { |text| text == key } + 1]
+    end
   end
 end
