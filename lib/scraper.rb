@@ -46,7 +46,7 @@ class Scraper
 
   def selected_texts
     texts = all_texts
-    keys = ['Recruiter:', 'Salary:']
+    keys = ['Recruiter:', 'Salary:', 'Location:', 'Job type:']
     keys.each_with_object(title: texts[0]) do |key, hash|
       hash[key.downcase[0..-2].to_sym] = texts[texts.find_index { |text| text == key } + 1]
     end
