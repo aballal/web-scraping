@@ -4,6 +4,11 @@ AllCops:
 
 Metrics/LineLength:
   Max: 100
-Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*'
+    - 'spec/helpers.rb'
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/helpers.rb'
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/helpers.rb'
